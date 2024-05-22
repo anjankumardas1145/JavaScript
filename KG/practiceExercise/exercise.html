@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<!--Question....
+  Give a discount based on age,gender for metro ticket 
+  females get 50% off
+  kids under 5 year of age are free
+  kids upto 8 year have half ticket
+  people over 65 years of age only pay 30% of the ticket
+  N:B:In case of multiple discount ,Maximum discount will apply-->
+  <script>
+    let age=prompt('enter the age');
+    let gender=prompt('enter the gender');
+    let finalDiscount;
+    if(age<=5){
+      finalDiscount=100;
+    }
+    else if(gender==='female'){
+finalDiscount=50;
+    }
+    else if(age<=8){
+      finalDiscount=50;
+    }
+    else if(age>=65){
+      finalDiscount=30;
+    }
+    else{
+      finalDiscount=0;
+    }
+    console.log(`your final discount will ${finalDiscount}`);
+  </script>
+</body>
+</html>

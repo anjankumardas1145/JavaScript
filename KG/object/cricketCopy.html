@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Game</title>
+    <style>
+      body {
+        text-align: center;
+        background-color: rgb(125, 43, 201);
+      }
+      .main-body {
+        border: solid 2px black;
+        width: 300px;
+        height: 150px;
+        background-color: rgb(77, 50, 111);
+        text-shadow: 3px 3px rgb(26, 144, 41);
+        margin: auto;
+        margin-top: 250px;
+      }
+      #b1 {
+        background-color: chartreuse;
+      }
+      #b2 {
+        background-color: cyan;
+      }
+      #b3 {
+        background-color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-body">
+      <h1>Bat Ball Stump Game</h1>
+      <button
+        id="b1"
+        onclick="generateComputerChoice();
+  
+    let resultMsg;
+  if(computerChoice==='ball'){
+    resultMsg='user won.';
+  }else if(computerChoice==='bat'){
+    resultMsg='it is a tye';
+  }else if(computerChoice==='stump'){
+    resultMsg='computer has won';
+  }
+  
+  alert(`you have chosen bat.computer choice is ${computerChoice} and ${resultMsg}` );
+    "
+      >
+        Bat
+      </button>
+
+      <button
+        id="b2"
+        onclick=" generateComputerChoice();
+  
+      resultMsg=`computer has own`;
+  if(computerChoice==='ball'){
+    resultMsg='it is a tye ';
+  }else if(computerChoice==='bat'){
+    resultMsg='computer has own';
+  }else if(computerChoice==='stump'){
+    resultMsg='user has won';
+  }
+  alert(`you have chosen bat.computer choice is ${computerChoice} and ${resultMsg}` );
+  
+    
+    "
+      >
+        Ball
+      </button>
+
+      <button
+        id="b3"
+        onclick="generateComputerChoice();
+        
+          resultMsg;
+  if(computerChoice==='ball'){
+    resultMsg='computer has own ';
+  }else if(computerChoice==='bat'){
+    resultMsg='user has own';
+  }else if(computerChoice==='stump'){
+    resultMsg='it is a type';
+  }
+  alert(`you have chosen bat.computer choice is ${computerChoice} and ${resultMsg}` );
+    
+    "
+      >
+        Wicket
+      </button>
+    </div>
+
+    <script>
+      let computerChoice;
+      function generateComputerChoice() {
+        //const userChoiceMsg = "You have chosen bat";
+        // computerChoice = "bat";
+
+        let randomNumber = Math.random() * 3;
+        if (randomNumber > 0 && randomNumber <= 1) {
+          computerChoice = "bat";
+        } else if (randomNumber > 1 && randomNumber <= 2) {
+          computerChoice = "ball";
+        } else {
+          computerChoice = "stump";
+        }
+        const computerChoiceMsg = `computer choice is ${computerChoice}`;
+      }
+    </script>
+  </body>
+</html>

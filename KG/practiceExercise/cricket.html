@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <style>
+    body{
+      text-align: center;
+      background-color: rgb(125, 43, 201);
+    }
+    .main-body{
+      border: solid 2px black;
+      width: 300px;
+      height: 150px;
+      background-color: rgb(77, 50, 111);
+      text-shadow: 3px 3px rgb(26, 144, 41);
+margin:auto;
+margin-top: 250px;
+    }
+    #b1{
+      background-color: chartreuse;
+    }
+    #b2{
+      background-color: cyan;
+    }
+    #b3{
+      background-color:darkorange;
+    }
+  </style>
+</head>
+<body>
+  <table border="1" style="border-collapse: collapse;">
+    <thead>
+      <th>User choice</th>
+    <th>Computer choice</th>
+    <th>Result</th>
+  </thead>
+  <tr>
+    <td rowspan="3">Ball</td>
+    <td>Bat</td>
+    <td>Com win</td>
+  </tr>
+  <tr>
+    <td>Wicket</td>
+    <td>User win</td>
+    
+  </tr>
+  <tr>
+    <td>Ball</td>
+    <td>tye</td>
+   </tr>
+  <tr>
+    <td rowspan="3">Bat</td>
+    <td>Bat</td>
+    <td>Tye</td>
+  </tr>
+  <tr>
+    <td>Ball</td>
+    <td>User win</td>
+    
+  </tr>
+  <tr>
+    <td>Wicket</td>
+    <td>com win</td>
+    
+  </tr>
+  <tr>
+    <td rowspan="3">wicket</td>
+    <td>Wicket</td>
+    <td>Tye</td>
+  </tr>
+  <tr>
+    <td>Ball</td>
+    <td>Com win</td>
+    
+  </tr>
+  <tr>
+    <td>Bat</td>
+    <td>User win</td>
+    
+  </tr>
+  </table>
+  <div class="main-body">
+    <h1>Bat Ball Stump Game</h1>
+    <button id="b1" onclick="const userChoiceMsg='You have chosen bat';
+     let computerChoice='bat';
+    //this will generate random number between 0 and 3
+    let randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1){
+       computerChoice='bat';
+     // console.log('computer choice is bat')
+    }else if(randomNumber>1 && randomNumber<=2){
+      computerChoice='ball';
+      //console.log('computer choice is ball')
+    
+    }else{
+      computerChoice='stump';
+      //console.log('computer choice is stump')
+    }
+    const computerChoiceMsg=`computer choice is ${computerChoice}`;
+  
+    let resultMsg;
+  if(computerChoice==='ball'){
+    resultMsg='user won.';
+  }else if(computerChoice==='bat'){
+    resultMsg='it is a tye';
+  }else if(computerChoice==='stump'){
+    resultMsg='computer has won';
+  }
+  
+  alert(`${userChoiceMsg} ${computerChoiceMsg} ${resultMsg}`)
+    
+    ">Bat</button>
+  
+  
+    <button id="b2"
+    onclick=" userChoiceMsg='You have chosen ball';
+      computerChoice='bat';
+    //this will generate random number between 0 and 3
+    randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1){
+       computerChoice='bat';
+     // console.log('computer choice is bat')
+    }else if(randomNumber>1 && randomNumber<=2){
+      computerChoice='ball';
+      //console.log('computer choice is ball')
+    
+    }else{
+      computerChoice='stump';
+      //console.log('computer choice is stump')
+    }
+     computerChoiceMsg=`computer choice is ${computerChoice}`;
+  
+      resultMsg=`computer has own`;
+  if(computerChoice==='ball'){
+    resultMsg='it is a tye ';
+  }else if(computerChoice==='bat'){
+    resultMsg='computer has own';
+  }else if(computerChoice==='stump'){
+    resultMsg='user has won';
+  }
+  
+  alert(`${userChoiceMsg} ${computerChoiceMsg} ${resultMsg}`)
+    
+    ">Ball</button>
+  
+  
+    <button id="b3"
+    onclick="userChoiceMsg='You have chosen stump';
+      computerChoice='bat';
+    //this will generate random number between 0 and 3
+    randomNumber=Math.random()*3;
+    if(randomNumber>0 && randomNumber<=1){
+       computerChoice='bat';
+     // console.log('computer choice is bat')
+    }else if(randomNumber>1 && randomNumber<=2){
+      computerChoice='ball';
+      //console.log('computer choice is ball')
+    
+    }else{
+      computerChoice='stump';
+      //console.log('computer choice is stump')
+    }
+    computerChoiceMsg=`computer choice is ${computerChoice}`;
+  
+  resultMsg;
+  if(computerChoice==='ball'){
+    resultMsg='computer has own ';
+  }else if(computerChoice==='bat'){
+    resultMsg='user has own';
+  }else if(computerChoice==='stump'){
+    resultMsg='it is a type';
+  }
+  
+  alert(`${userChoiceMsg} ${computerChoiceMsg} ${resultMsg}`)
+    
+    ">Wicket</button>
+  </div>
+  
+</body>
+</html>

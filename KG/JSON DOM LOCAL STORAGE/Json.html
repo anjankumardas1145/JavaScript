@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Json</title>
+</head>
+<body>
+  <script>
+let product={
+  price:200,
+  name:'tShirt',
+  rating:{
+    stars:4.5,
+    noOfReviews:455,
+  },
+};
+console.log(product)
+console.log(typeof product)
+let str=JSON.stringify(product)//JSON.stringify() used to convert the objet to string
+console.log(str)
+console.log(typeof str)
+let newProduct=JSON.parse(str)//JSON.purse() is used to convert the string to object
+console.log(typeof newProduct)
+  </script>
+</body>
+</html>

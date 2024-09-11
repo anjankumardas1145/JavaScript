@@ -10,6 +10,8 @@ console.log(price);
 console.log(typeof price);
 let x=null;
 console.log(typeof x);
+name2="Shree Ram"
+console.log(name2);
 
 const Student={
   FullName:"Anjan",

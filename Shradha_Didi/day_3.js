@@ -67,7 +67,7 @@
 
 //String question
 
-let  fullName=prompt("Enter the name:");
+let  fulllName=prompt("Enter the name:");
 console.log(fullName);
-let username="@"+fullName+fullName.length;
+let username="@"+fulllName+fulllName.length;
 console.log(username)

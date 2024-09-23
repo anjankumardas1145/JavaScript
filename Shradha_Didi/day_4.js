@@ -51,10 +51,48 @@ console.log(" Please god take care of her and you know she is just like a small 
 //  }
 
 
-let item=[250,645,300,900,50];
+// let item=[250,645,300,900,50];
 
-  for(let i=0;i<item.length;i++){
-    let offer=item[i]/10;
-  item[i]=item[i]-offer;
-  console.log(`value after the offer is ${item[i]}`)
-}
+//   for(let i=0;i<item.length;i++){
+//     let offer=item[i]/10;
+//   item[i]=item[i]-offer;
+//   console.log(`value after the offer is ${item[i]}`)
+// }
+
+
+//Array method
+//push-add pop-delete
+
+// let cricketer=["Rohit","Virat","SKY","Hardik","Jasprit"];
+// console.log(cricketer);
+// cricketer.push("Jadeja","Axer","Kuldeep");
+// console.log(cricketer);
+// //cricketer.pop();
+// let deletd=cricketer.pop();
+// console.log(deletd)
+// console.log(cricketer)
+// let deleted=cricketer.pop();
+// console.log(deleted)
+
+
+// create an array " Bloomberg"," Microsoft","Uber","Google","IBM","Netflix"
+//A:// //remove the first company
+// let arr=[" Bloomerg","Microdoft","Uber","Google","IBM","Netflix"];
+// console.log(arr)
+
+
+// arr.shift(); // This removes the first element
+// console.log(arr); // ["Microdoft", "Uber", "Google", "IBM", "Netflix"]
+
+//B
+
+// let arr = ["Bloomerg", "Microdoft", "Uber", "Google", "IBM", "Netflix"];
+// console.log(arr)
+// arr[arr.indexOf("Uber")] = "Ola"; // Replace "Uber" with "Ola"
+//arr.splice(2,1,"Ola");
+// console.log(arr); // ["Bloomerg", "Microdoft", "Ola", "Google", "IBM", "Netflix"]
+
+// Add AMAZON AT THE END
+let arr = ["Bloomerg", "Microdoft", "Uber", "Google", "IBM", "Netflix"];
+arr.push("Amazon")
+console.log("the array is :",arr)

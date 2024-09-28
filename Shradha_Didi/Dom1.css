@@ -10,3 +10,11 @@ button{
   background-color: blue;
   color: white;
 }
+.BOX{
+  height:200px;
+  width:130px;
+  border:1px solid black ;
+  margin:5px;
+  text-align: center;
+  background-color: blueviolet;
+}

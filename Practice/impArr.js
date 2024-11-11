@@ -130,3 +130,51 @@ function reverseNumber(num){
     return rev;
 }
 console.log(reverseNumber(1234));
+
+//string 
+
+
+console.log("Try programiz.pro");
+function reverse(name){
+    let rev=" ";
+    for(let i=name.length-1;i>=0;i--){
+        rev=rev+name[i];
+    }
+    return rev;
+}
+console.log(reverse("Ankita Mam"))
+
+
+//count vowel in a string
+
+function countVowel(stringg){
+    let vowel=0;
+    for(let i=0;i<stringg.length;i++){
+        let char=stringg[i].toUpperCase();
+        if(char=='A' || char=='E' || char=='I' || char=='O' || char=='U'){
+            vowel++;
+        }
+    }
+    return vowel;
+}
+console.log("Vowel in Ankita is :" ,+countVowel("Ankita Mam"))
+
+
+// check palindrom string
+
+function checkPalinDrome(namee){
+    let start=0;
+    let end=namee.length -1;
+    while(start<end){
+        if(namee[start]!==namee[end]){
+            return false;
+        }
+        start++;
+        end--;
+    }
+    return true;
+}
+console.log(checkPalinDrome("Ankita Mam"))
+
+
+//count the vowel and consonamt in a string

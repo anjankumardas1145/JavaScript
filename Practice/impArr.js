@@ -24,7 +24,7 @@ function findGreatest(arr){
     }
     return `Smallest element is: ${smallest} and largest is: ${largest}`
 }
-let arr2=[11,07,18,45];
+let arr2=[11,7,18,45];
 console.log(findGreatest(arr2))
 
 
@@ -142,7 +142,7 @@ function reverse(name){
     }
     return rev;
 }
-console.log(reverse("Ankita Mam"))
+console.log(reverse("Anjan Mam"))
 
 
 //count vowel in a string
@@ -157,7 +157,7 @@ function countVowel(stringg){
     }
     return vowel;
 }
-console.log("Vowel in Ankita is :" ,+countVowel("Ankita Mam"))
+console.log("Vowel in Anjan is :" ,+countVowel("Anjan Mam"))
 
 
 // check palindrom string
@@ -174,7 +174,33 @@ function checkPalinDrome(namee){
     }
     return true;
 }
-console.log(checkPalinDrome("Ankita Mam"))
+console.log(checkPalinDrome("Anjan Mam"))
 
 
 //count the vowel and consonamt in a string
+
+
+console.log("Try programiz.pro");
+console.log("Try programiz.pro");
+function rev(number){
+    let rev=0;
+    let temp=number;
+    while(number>0){
+        let rem=number%10;
+        rev=rev*10+rem;
+        number=Math.floor((number/10));
+    }
+    console.log(rev)
+    return rev===temp
+}
+console.log(rev(121))
+
+//reverse string
+function reVString(name){
+    let rev="";
+    for(let i=name.length-1;i>=0;i--){
+        rev=rev+name[i];
+    }
+    return rev;
+}
+console.log(reVString("Anjan"))

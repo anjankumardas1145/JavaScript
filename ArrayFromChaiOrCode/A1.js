@@ -5,7 +5,7 @@ const bowler=["Akash","Siraj"," Reddy"];
 // console.log(batsMen[3]);
 // console.log(batsMen[3][1]);
 
-console.log("Ankita")
+console.log("Software Engineer")
 
 const players=batsMen.concat(bowler);//concat returns a new array properly
 console.log(players)
@@ -24,4 +24,10 @@ const resultArr=arr3.flat(Infinity);
 console.log(resultArr)
 
 console.log(Array.isArray("Virat kohli"));
-console.log(Array.from("Ankita"))
+console.log(Array.from("Virat kohli"))
+
+
+let score=77;
+let score2=88;
+let score3=55;
+console.log(Array.of(score,score2,score3));

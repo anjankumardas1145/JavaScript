@@ -1,0 +1,25 @@
+.main{
+
+  display: flex;
+  justify-content: center;
+  
+  gap: 20px;
+
+}
+.mn{
+  text-align: center;
+}
+#red{
+  background-color: red;
+}
+#white
+{
+  background-color: aliceblue;
+}
+#gray{
+  background-color: gray;
+
+}
+#blue{
+  background-color: blue;
+}

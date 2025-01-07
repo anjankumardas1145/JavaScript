@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <button id="start">start</button>
+  <button id="stop">stop</button>
+
+  <script>
+    let intervalId;
+    const sayDate = function() {
+      console.log("Anjan", Date.now());
+    }
+
+    document.querySelector('#start').addEventListener('click', function() {
+      intervalId = setInterval(sayDate, 3000);
+    });
+
+    document.querySelector('#stop').addEventListener('click', function() {
+      clearInterval(intervalId);
+    });
+  </script>
+</body>
+</html>

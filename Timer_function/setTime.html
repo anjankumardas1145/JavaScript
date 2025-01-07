@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Set Timeout function</title>
+</head>
+<body>
+  <h3>Happy new Year</h3>
+  <button id="stop">stop</button>
+</body>
+<script>
+
+  //document.querySelector('h3').innerHTML="Good by 2024";
+
+  setTimeout(function(){
+    document.querySelector('h3').innerHTML="Good by 2024";
+  },5000)
+  const sayJayjagannath=function(){
+    console.log("Jay Jagannath")
+    console.log("Ankita")
+  }
+setTimeout(sayJayjagannath,9000)
+
+
+setTimeout(function(){
+  console.log("Ankita")
+},8000)
+</script>
+</html>

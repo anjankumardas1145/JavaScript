@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #09747b;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  background-image:url(img/tic-tac-toe3.jpeg);
+}
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 3rem;
+  color: #cc0f71;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #6e9193;
+  width: 300px;
+  border-radius: 10px;
+  height: 300px;
+}
+
+.game {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;/*for binding*/
+  width: 300px;
+ /* box-shadow: 10px 10px 10px 10px  #d1056b;*/
+  
+}
+/* box styling*/
+.box {
+  width: 75px;
+  height: 75px;
+  background: #085fb7;
+  font-size: 2rem;
+  color: #4beb0c;
+  cursor: pointer;
+  margin: 2.5px;
+  border-radius: 20px;
+  /*box-shadow: 10px 5px 10px 5px  #6659c7;*/
+  
+  
+  
+}
+
+.box:hover {
+  background: #8cada4;
+}
+
+.box:disabled {
+  background: #e0dc04;
+  color: #888;
+}
+
+.msg-container {
+  position: fixed;
+  
+  top: 20%;
+  left: 40%;
+  height: 100px;
+  width: 300px;
+  background: rgba(202, 193, 193, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  color: #a612d3;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.msg-container.show {
+  display: flex;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #3f09bf;
+  color: #fff;
+  margin: 5px;
+}
+
+button:hover {
+  background: #2d2a2a;
+}
+
+.hide {
+  display: none;
+}
